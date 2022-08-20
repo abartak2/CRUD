@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Planner</title>
+    <link href="eventplanner.css" rel="stylesheet" />
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <!-- <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet"> -->
+
+</head>
+<!-- create container for form/table -->
+<body class="container">
+    <!-- App Heading -->
+        <h1>My Event Scheduler</h1>
+        <!-- form to enter new event data -->
+    <form id="allEventInfo" onsubmit="updateOrNewSubmission()">
+    <div class="row">
+        <div class="col">
+          <input type="text" onfocus = "this.value=''" class="form-control" id="newEvent" name="newEvent" placeholder="Event Name"> 
+        </div>
+        <div class="col">
+          <input type="date" onfocus = "this.value=''" class="form-control" id="newDate" placeholder="Date">
+
+        </div>
+        <!-- button to submit event data -->
+        <input type="button" class="btn btn-success align-right" id="submitEventInfo" onclick="eventData()" value= "Submit"></button>
+        </div>
+      </form>
+      <div>
+        <!-- table to hold all event information -->
+      <table id="eventTable" table class="table table-bordered">
+        <thead>
+        <tr>
+        <th>New Events</th>
+        <th>Event Dates</th>
+        <th>Actions</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr>
+
+        </tr>
+        </tbody>
+
+      </table>
+        </div>
+        </div> 
+      </div>
+
+
+    
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="eventplanner.js"></script>
+</body>
+</html>

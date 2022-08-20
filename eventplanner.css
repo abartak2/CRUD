@@ -1,0 +1,51 @@
+/* set background of app to blue */
+.container {
+    background-color: blue
+}
+/* center App heading, change text color to yellow and update font */
+h1 {
+    text-align: center;
+    color:yellow;
+    font-family:candara;
+}
+
+h2 {
+    color:yellow;
+}
+
+/* update the Table Heading color, size, and font */
+th {
+    color:yellow;
+    font-size: 20px;
+    list-style: none;
+    font-family:arial;
+}
+
+/* center the Table Headers */
+thead {
+    text-align: center;
+}
+
+/* set Event Info data in table to yellow text and adjust size */
+td {
+    color:yellow;
+    font-size: 20px;
+    list-style: none;
+}
+
+/* set the submit event button to blue background and yellow font, adjusted size */
+#submitEventInfo {
+    background-color: yellow;
+    color:blue;
+    padding: 14px 40px 
+    font-size: 28px;
+    width: 25%
+}
+/* add space between the buttons */
+#editButton {
+    margin-right: 10px;
+}
+/* add space between the buttons */
+#deleteButton {
+    margin-left: 10px;
+}
